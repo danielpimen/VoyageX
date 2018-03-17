@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VoyageX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/images/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" id="myNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="#section1">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="create_account.html">Create an Account<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">My Trips</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div id="wrapperText">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name-input"><b>First name</b></label>
+                    <input type="text" class="form-control" id="first-name-input" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="last-name-input"><b>Last name</b></label>
+                    <input type="text" class="form-control" id="last-name-input" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="street-address-line-input1"><b>Street Address Line 1</b></label>
+                    <input type="text" class="form-control" id="street-address-line-input1">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="street-address-line-input2"><b>Street Address Line-input 2</b></label>
+                    <input type="text" class="form-control" id="street-address-line-input2">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="city-input"><b>City</b></label>
+                    <input type="text" class="form-control" id="city-input" placeholder="City" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state-input"><b>State</b></label>
+                    <input type="text" class="form-control" id="state-input" placeholder="State" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="zip-input"><b>Zip</b></label>
+                    <input type="text" class="form-control" id="zip-input" placeholder="Zip" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="number-input"><b>Number</b></label>
+                    <input type="text" class="form-control" id="number-input" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="emergency-number-input"><b>Emergency Number</b></label>
+                    <input type="text" class="form-control" id="emergency-number-input" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6"">
+                    <label for="medical-conditions"><b>Comprehensive Medical Test</b></label>
+                    <textarea class="form-control" id="medical-conditions" rows="3"></textarea>
+                </div>                
+                <div class="form-group col-md-6">
+                    <label for="email-input"><b>Email</b></label>
+                    <input type="text" class="form-control" id="email-input" required>
+                </div>
+
+            </div>
+                <a href="book.html" button id="profile-button" class="btn btn-primary" type="nextBtn">Next</a>
+            </div>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
