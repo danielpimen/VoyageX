@@ -4,6 +4,8 @@ console.log('Hello');
 //Destination
 //Trip Date
 //People
+let tripDetail;
+
 
 $('#bookBtn').click(function() {
 
@@ -21,5 +23,14 @@ $('#bookBtn').click(function() {
     		alert('Submitted');
 
     	})
+    return tripDetail;
+    navigatePage()
+
 
 });
+
+    function navigatePage(){
+        console.log(tripDetail.destination);
+        alert('Hello');
+        window.location.href = '../destinations/' + tripDetail.location + '.html';
+    }
