@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>VoyageX</title>
+    <title>Create Account</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/account.css">
 </head>
 
 <body>
@@ -37,9 +37,7 @@
                     <a class="nav-link mr-5" href="#section1">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
+                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item active" href="create_account.html">Create an Account<span class="sr-only">(current)</span></a>
                         <a class="dropdown-item" href="#">My Account</a>
@@ -49,67 +47,129 @@
             </ul>
         </div>
     </nav>
-    <div class="wrapper">
-        <div id="wrapperText">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="first-name-input"><b>First name</b></label>
-                    <input type="text" class="form-control" id="first-name-input" required>
+    <div class="account-wrapper">
+        <div class="account-header">
+            <h2>Create Account</h2>
+            <img src="assets/images/astro-head.png" alt="astronaut head icon" class="astro-head">
+            <hr>
+        </div>
+        
+        <div id="account-wrapperText">
+
+            <form class="needs-validation" novalidate id="create-account" action="" method="POST">
+              <!-- === First Row ==== -->  
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="first-name-input">First name</label>
+                        <input type="text" class="form-control" id="first-name-input" placeholder="First name" required>
+                        <div class="invalid-feedback">
+                            Please enter first name.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="last-name-input">Last name</label>
+                        <input type="text" class="form-control" id="last-name-input" placeholder="Last name" required>
+                        <div class="invalid-feedback">
+                            Please enter last name.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="last-name-input"><b>Last name</b></label>
-                    <input type="text" class="form-control" id="last-name-input" required>
+                <!-- === Second Row ==== --> 
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="street-address-line-input1">Address Line 1</label>
+                        <input type="text" class="form-control" id="street-address-line-input1" placeholder="Address" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid address.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="street-address-line-input2">Address Line 2</label>
+                        <input type="text" class="form-control" id="street-address-line-input2" placeholder="Address">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="street-address-line-input1"><b>Street Address Line 1</b></label>
-                    <input type="text" class="form-control" id="street-address-line-input1">
+                <!-- === Third Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="city-input">City</label>
+                        <input type="text" class="form-control" id="city-input" placeholder="City" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3 form-group">
+                        <label for="state-input">State</label>
+                        <br>
+                        <select class="custom-select" id="state-input" required>
+                            <option value=""></option>
+                            <option value="AL">AL</option>
+                            <option value="CA">CA</option>
+                            <option value="GA">GA</option>
+                            <option value="FL">FL</option>
+                            <option value="NY">NY</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip-input">Zip</label>
+                        <input type="text" class="form-control" id="zip-input" placeholder="12345" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="street-address-line-input2"><b>Street Address Line-input 2</b></label>
-                    <input type="text" class="form-control" id="street-address-line-input2">
+            <!-- === Fourth Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="number-input">Number</label>
+                        <input type="text" class="form-control" id="number-input" placeholder="1234567899" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid number.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="emergency-number-input">Emergency Number</label>
+                        <input type="text" class="form-control" id="emergency-number-input" placeholder="1234567899" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid emergency number.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="email-input">Email</label>
+                        <input type="text" class="form-control" id="email-input" placeholder="email@abc.com" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="city-input"><b>City</b></label>
-                    <input type="text" class="form-control" id="city-input" placeholder="City" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="state-input"><b>State</b></label>
-                    <input type="text" class="form-control" id="state-input" placeholder="State" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="zip-input"><b>Zip</b></label>
-                    <input type="text" class="form-control" id="zip-input" placeholder="Zip" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="number-input"><b>Number</b></label>
-                    <input type="text" class="form-control" id="number-input" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="emergency-number-input"><b>Emergency Number</b></label>
-                    <input type="text" class="form-control" id="emergency-number-input" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6"">
-                    <label for="medical-conditions"><b>Comprehensive Medical Test</b></label>
-                    <textarea class="form-control" id="medical-conditions" rows="3"></textarea>
-                </div>                
-                <div class="form-group col-md-6">
-                    <label for="email-input"><b>Email</b></label>
-                    <input type="text" class="form-control" id="email-input" required>
+            <!-- === Fifth Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="medical-conditions">Medical Conditions</label>
+                        <textarea class="form-control" id="medical-conditions" rows="3" required></textarea>
+                    </div>
                 </div>
 
-            </div>
-                <a href="book.html" button id="profile-button" class="btn btn-primary" type="nextBtn">Next</a>
-            </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">Agree to terms and conditions.
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-primary" id="profile-button" type="submit" role="button" disable>Create</a>
+            </form>
         </div>
     </div>
+
+
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -121,8 +181,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/create_account.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="assets/js/account.js"></script>
 </body>
 
 </html>

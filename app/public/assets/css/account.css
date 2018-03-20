@@ -1,0 +1,54 @@
+/****Account Page Styles*****/
+
+body {
+	background-image: url("../images/accountBck.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+.account-wrapper {
+    padding: 2% 5%;
+    margin: 5%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: /* #707070 */ #2d007ede;
+    z-index: -2;
+    color: #ffffff;
+}
+
+#account-wrapperText {
+    /* color: #ffffff; */
+    font-weight: bold;
+    opacity: 1.0;
+    z-index: 0;
+}
+
+/* #bookBtn {
+    padding: 15px 20px;
+} */
+
+.account-header{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.astro-head {
+	width: 10%;
+	height: 100%;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    width: 25%;
+}
+
+#state-input {
+    width: 100%;
+}
+
+.btn-primary {
+	background-color: #e53935;
+	border-color: #e53935;
+	font-weight: bold;
+}
