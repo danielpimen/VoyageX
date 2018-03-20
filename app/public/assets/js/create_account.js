@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log("account.js loaded");
 
     'use strict';
 
@@ -9,11 +10,14 @@ $(document).ready(function() {
       // Loop over them and prevent submission
        
       var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
+        form.addEventListener('click', function(event) {
           if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
           } else {
+
+              $("#profile-button").attr("href","book.html");
+
               var newUser = {
                 firstName: $("#first-name-input").val().trim(),
                 lastName: $("#last-name-input").val().trim(),
@@ -32,7 +36,6 @@ $(document).ready(function() {
               //send POST request
               $.post("/api/new", newUser)
               .then(function(data){
-              	alert("Yay");
                 console.log(data);
               });
             }
