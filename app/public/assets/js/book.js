@@ -18,19 +18,18 @@ $('#bookBtn').click(function() {
     }
     console.log(tripDetail);
 
-    $.post('/api/trip', tripDetail, 
-    	function(data){
-    		alert('Submitted');
-
-    	})
-    return tripDetail;
-    navigatePage()
+    $.post('/api/trip', tripDetail, function(data) {
+        // alert('Submitted');
+    }).then(function() {
+        navigatePage(tripDetail);
+    });
 
 
 });
 
-    function navigatePage(){
-        console.log(tripDetail.destination);
-        alert('Hello');
-        window.location.href = '../destinations/' + tripDetail.location + '.html';
-    }
+function navigatePage(tripDetail) {
+    console.log(tripDetail.destination);
+    let url = "/destinations/" + tripDetail.destination + ".html";
+    window.location = url;
+    // window.location.href = '../destinations/' + tripDetail.location + '.html';
+}
