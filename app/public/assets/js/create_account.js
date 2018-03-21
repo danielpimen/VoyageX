@@ -36,7 +36,6 @@ $(document).ready(function() {
                 console.log(data);
               });
 
-              modal();
             }
           form.classList.add('was-validated');
         }, false);
