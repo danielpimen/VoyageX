@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>VoyageX</title>
+    <title>Create Account</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/account.css">
 </head>
 
 <body>
@@ -37,9 +37,7 @@
                     <a class="nav-link mr-5" href="#section1">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
+                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item active" href="create_account.html">Create an Account<span class="sr-only">(current)</span></a>
                         <a class="dropdown-item" href="#">My Account</a>
@@ -47,82 +45,156 @@
                     </div>
                 </li>
             </ul>
+            <div id="username">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in">logout</span></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="wrapper">
-        <div id="wrapperText">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="first-name-input"><b>First name</b></label>
-                    <input type="text" class="form-control" id="first-name-input" required>
+    <div class="account-wrapper">
+        <div class="account-header">
+            <h2>Create Account</h2>
+            <img src="assets/images/astro-head.png" alt="astronaut head icon" class="astro-head">
+            <hr>
+        </div>
+        <div id="account-wrapperText">
+            <form class="needs-validation" novalidate id="create-account" action="" method="POST">
+                <!-- === First Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="first-name-input">First name</label>
+                        <input type="text" class="form-control" id="first-name-input" placeholder="First name" required>
+                        <div class="invalid-feedback">
+                            Please enter first name.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="last-name-input">Last name</label>
+                        <input type="text" class="form-control" id="last-name-input" placeholder="Last name" required>
+                        <div class="invalid-feedback">
+                            Please enter last name.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="last-name-input"><b>Last name</b></label>
-                    <input type="text" class="form-control" id="last-name-input" required>
+                <!-- === Second Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="street-address-line-input1">Address Line 1</label>
+                        <input type="text" class="form-control" id="street-address-line-input1" placeholder="Address" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid address.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="street-address-line-input2">Address Line 2</label>
+                        <input type="text" class="form-control" id="street-address-line-input2" placeholder="Address">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="street-address-line-input1"><b>Street Address Line 1</b></label>
-                    <input type="text" class="form-control" id="street-address-line-input1">
+                <!-- === Third Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="city-input">City</label>
+                        <input type="text" class="form-control" id="city-input" placeholder="City" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 form-group">
+                        <label for="state-input">State</label>
+                        <br>
+                        <select class="custom-select" id="state-input" required>
+                            <option value=""></option>
+                            <option value="AL">AL</option>
+                            <option value="CA">CA</option>
+                            <option value="GA">GA</option>
+                            <option value="FL">FL</option>
+                            <option value="NY">NY</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip-input">Zip</label>
+                        <input type="text" class="form-control" id="zip-input" placeholder="12345" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="street-address-line-input2"><b>Street Address Line-input 2</b></label>
-                    <input type="text" class="form-control" id="street-address-line-input2">
+                <!-- === Fourth Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="number-input">Number</label>
+                        <input type="text" class="form-control" id="number-input" placeholder="1234567899" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid number.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="emergency-number-input">Emergency Number</label>
+                        <input type="text" class="form-control" id="emergency-number-input" placeholder="1234567899" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid emergency number.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="email-input">Email</label>
+                        <input type="text" class="form-control" id="email-input" placeholder="email@abc.com" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="city-input"><b>City</b></label>
-                    <input type="text" class="form-control" id="city-input" placeholder="City" required>
+                <!-- === Fifth Row ==== -->
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="medical-conditions">Medical Conditions</label>
+                        <textarea class="form-control" id="medical-conditions" rows="3" required></textarea>
+                    </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="state-input"><b>State</b></label>
-                    <input type="text" class="form-control" id="state-input" placeholder="State" required>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">Agree to <a id="myBtn" href>Terms and Conditions.</a>
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="zip-input"><b>Zip</b></label>
-                    <input type="text" class="form-control" id="zip-input" placeholder="Zip" required>
+                <a class="btn btn-primary" id="profile-button" type="submit" role="button" disable>Create</a>
+            </form>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Terms and Conditions</h2>
+                    <span class="close">&times;</span>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="number-input"><b>Number</b></label>
-                    <input type="text" class="form-control" id="number-input" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="emergency-number-input"><b>Emergency Number</b></label>
-                    <input type="text" class="form-control" id="emergency-number-input" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6"">
-                    <label for="medical-conditions"><b>Comprehensive Medical Test</b></label>
-                    <textarea class="form-control" id="medical-conditions" rows="3"></textarea>
-                </div>                
-                <div class="form-group col-md-6">
-                    <label for="email-input"><b>Email</b></label>
-                    <input type="text" class="form-control" id="email-input" required>
-                </div>
-
-            </div>
-                <a href="book.html" button id="profile-button" class="btn btn-primary" type="nextBtn">Next</a>
+                <p class="modal-body">
+                    This product is meant for educational purposes only. Any resemblance to real persons, living or dead is purely coincidental. Void where prohibited. Some assembly required. List each check separately by bank number. Batteries not included. Contents may settle during shipment. Use only as directed. No other warranty expressed or implied. Do not use while operating a motor vehicle or heavy equipment. Postage will be paid by addressee. Subject to CARB approval. This is not an offer to sell securities. Apply only to affected area. May be too intense for some viewers. Do not stamp. Not rated by the Motion Picture Association of America. Call for nutritional information. Use other side for additional listings. Printed on recycled paper. For recreational use only. Do not disturb. All models over 18 years of age. Prize not redeemable for cash value. If condition persists, consult your physician. No user-serviceable parts inside. Freshest if eaten before date on carton. To be used as a supplementary restraint system only. Always fasten your safety belt. Subject to change without notice. Times approximate. Simulated picture. Do not staple or paper clip. Price slightly higher east of Alaska. No postage necessary if mailed in the United States. Do not X-ray. Breaking seal constitutes acceptance of agreement. For off-road use only. As seen on TV. One size fits all. Many suitcases look alike. Contains a substantial amount of non-tobacco ingredients. Colors may, in time, fade. We have sent the forms which seem right for you. Magnetic media, non-returnable if seal is broken. Formatted to fit your screen. Slippery when wet. For office use only. Not affiliated with the American Red Cross. Drop in any mailbox. Edited for television. Keep cool, process promptly. Post office will not deliver without postage. List was current at time of printing. Return to sender, no forwarding order on file, unable to forward. Prolong exposure to vapors has caused cancer in laboratory animals. Not responsible for direct, indirect, incidental or consequential damages resulting from any defect, error or failure to perform. Keep away from children. At participating locations only. Not the Beatles. Penalty for private use. See label for sequence. Substantial penalty for early withdrawal. Do not write below this line. Falling rock. Lost ticket pays maximum rate. Phenylketonurics: contains phenylalnine. Your canceled check is your receipt. Add toner. Place stamp here. Use only as directed; intentional misuse by deliberately concentrating and inhaling contents can be harmful or fatal. Avoid contact with skin. Road construction ahead. Open other end. Dealer participation may affect final price. May not be present in all tap water. Sanitized for your protection. Be sure each item is properly endorsed. Sign here without admitting guilt. Slightly higher west of the Mississippi. Park at your own risk. Employees and their families and friends are not eligible. Beware of dog. Contestants have been briefed on some questions before the show. Limited time offer, call now to ensure prompt delivery. You must be present to win. No passes accepted for this engagement. No purchase necessary. Processed at location stamped in code at top of carton. Shading within a garment may occur. Keep away from fire or flames. See Uniform Code of Military Justice. Replace with same type. Approved for veterans. Booths for two or more. Indicates a low-fat item. Check here if tax deductible. Some equipment shown is optional. Price does not include taxes. No Canadian coins. Tax, tag, and title not included in advertised price. Not recommended for children. Prerecorded for this time zone. Reproduction by mechanical or electronic means, including photocopying, is strictly prohibited. No solicitors. No alcohol, dogs or horses. No anchovies unless otherwise specified. Avoid spraying into eyes. An 18% gratuity will be added for parties of 8 or more. Do not write under this line.
+                </p>
             </div>
         </div>
-    </div>
-    <!-- JQuery -->
-    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/create_account.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+        <script type="text/javascript" src="assets/js/create_account.js"></script>
 </body>
 
 </html>
