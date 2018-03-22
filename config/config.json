@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "awesome1",
+    "password": "fbhs2011",
     "database": "voyagexDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
