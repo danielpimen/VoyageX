@@ -68,7 +68,7 @@ body {
 
 .itineraryBody {
     background-image: url("https://i.imgur.com/O5JBAFZ.jpg");
-    background-size: 1440px;
+    width: 1440px;
     margin: 0;   
 }
 
@@ -81,14 +81,14 @@ body {
 
 .container {
     background-color: black;
-    padding: 0 25% 5% 5%;
+    padding:  0 5% 5% 5%;
     margin-right: 50px;
     width: 80%;
 }
 
 .wrapper1 {
     padding: 2% 1% 1% 2%;
-    margin: 5% 25% 5% 20%;
+    margin:  5% 5% 5% 10%;
     border: 1px solid #ffffff;
     width: 60%;
     height: 7%;
