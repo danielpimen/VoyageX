@@ -12,7 +12,8 @@ app.use(bodyParser.json());
 
 app.use(express.static("public"));
 
-require("./routes/api-routes.js")(app);
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
