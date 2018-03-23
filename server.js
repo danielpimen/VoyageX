@@ -10,6 +10,8 @@ var request = require('request');
 
 var app = express();
 var PORT = process.env.PORT || 8080;
+var db = require("./models");
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
@@ -66,8 +68,6 @@ app.get('/example', function (req, res) {
 });
 
 
-
-
 // Static directory to be served
 app.use(express.static("app/public"));
 
@@ -75,6 +75,8 @@ require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
 
 
-app.listen(PORT, function() {
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
+  });
 });

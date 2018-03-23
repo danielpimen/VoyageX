@@ -15,7 +15,7 @@ $('#bookBtn').click(function() {
         date: $("#date-selected").val(),
         passengers: $("#passenger-selected").val()
 
-    }
+    } 
     console.log(tripDetail);
 
     $.post('/api/trip', tripDetail, function(data) {
