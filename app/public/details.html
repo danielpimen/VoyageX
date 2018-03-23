@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VoyageX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/images/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+</head>
+
+<body class="detailsBody">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" id="myNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="create_account.html">Create an Account</a>
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="mytrip.html">My Trips</a>
+                    </div>
+                </li>
+            </ul>
+            <div id="username">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in">logout</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="detailTxt">Confirm your Details</h1>
+     <div class="confirmTb">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">1</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Moon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Departure</td>
+                    <td>NASA Stennis Space Center</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Trip Date</td>
+                    <td>April 2 - April 14</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Passengers</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Shuttle</td>
+                    <td>Space Shuttle Discovery</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Hotel</td>
+                    <td>SpaceX Hotel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h1 class="detailTxt">Payment</h1>
+    <div class="payContainer">
+        <div class="wrapper">
+            <form id="wrapperText">
+                <div class="form-row">
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Card Type</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected>Select</option>
+                            <option value="1">Visa</option>
+                            <option value="2">Master</option>
+                            <option value="2">Discover</option>
+                            <option value="2">Employee</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6 my-4">
+                        <label for="cardNumber"><b>Card number</b></label>
+                        <input type="text" class="form-control" id="cardNumber" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Expiration data</label>
+                        <select class="form-control" id="exData">
+                            <option selected>Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                            <option value="2">7</option>
+                            <option value="2">8</option>
+                            <option value="1">9</option>
+                            <option value="2">10</option>
+                            <option value="2">11</option>
+                            <option value="2">12</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6 my-4">
+                        <label for="exampleFormControlSelect1">Expiration data</label>
+                        <select class="form-control" id="year">
+                            <option selected>Year</option>
+                            <option value="1">2018</option>
+                            <option value="2">2019</option>
+                            <option value="2">2020</option>
+                            <option value="2">2021</option>
+                            <option value="1">2022</option>
+                            <option value="2">2023</option>
+                            <option value="2">2024</option>
+                            <option value="2">2025</option>
+                            <option value="1">2026</option>
+                            <option value="2">2027</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 my-4">
+                        <label for="cardName"><b>Card name</b></label>
+                        <input type="text" class="form-control" id="cardName" required>
+                    </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="priceBox">
+        <table class="table" id="priceTable">
+            <thead>
+                <tr>
+                    <th scope="col">Subtotal</th>
+                    <th scope="col">$3,500</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estimated tax</td>
+                    <td>$315</td>
+                </tr>
+                <tr>
+                    <td><b>Order total</b></td>
+                    <td><b>$3,815</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="form-row">
+        <a href="last_confirm.html" class="button" button type="submit" class="btn btn-primary" id="orderBtn">Submit Payment</a>
+    </div>
+</body>
+
+</html>
