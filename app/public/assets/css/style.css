@@ -62,6 +62,7 @@ body {
 
 #bookBtn {
     padding: 15px 20px 15px 20px;
+    border-radius: 10px;
 }
 
 /*Itinerary Page*/
@@ -102,5 +103,27 @@ body {
 }
 
 #selectBtn {
-     margin: 30% 2% 2% 15%;
+     margin: 22% 2% 2% 15%;
+}
+
+/*create account page*/
+
+#profile-button {
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+/*Details Page*/
+.detailsBody {
+    background-image: url("https://i.imgur.com/kjIo6bW.jpg");
+    background-size: 1440px;
+    margin: 0;
+
+} 
+
+.detailTxt {
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    font-size: 40px;
+    margin: 5% 0 5% 35%;
 }

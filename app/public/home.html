@@ -9,7 +9,6 @@
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/homestyle.css">
-    <link rel="stylesheet" href="assets/images/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +34,11 @@ body {
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/images/Galaxy.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +78,6 @@ body {
             </div>
         </div>
     </nav>
-    </nav>
     <div>
         <p id="homeLogo">VoyageX</p>
     </div>
@@ -91,10 +93,15 @@ body {
                 <p class="cardText2">T. S. Eliot</p>
             </div>
         </div>
-        <div class=textBox>
-            <p class=aboutText>App to search and book voyages to space. User will be able to book a voyage by selecting destination, date and passengers. User must create a profile and have the ability to update and delete profile. User will have the ability to see the profiles of other passengers (because these will be people they will be spending a lot of time with). User will be able to also view the "itinerary" of each voyage and save favorites.</p>
+        <div class="textBox">
+            <p class="aboutText">App to search and book voyages to space. User will be able to book a voyage by selecting destination, date and passengers. User must create a profile and have the ability to update and delete profile. User will have the ability to see the profiles of other passengers (because these will be people they will be spending a lot of time with). User will be able to also view the "itinerary" of each voyage and save favorites.</p>
         </div>
+    </div>
+</div>
         <script>
+        // Get the video
+         var video = document.getElementById("myVideo");
+
         $(document).ready(function() {
             // Add scrollspy to <body>
             $('body').scrollspy({ target: ".navbar", offset: 50 });
