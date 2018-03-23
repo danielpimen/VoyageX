@@ -71,8 +71,4 @@ $(document).ready(function() {
           }
       }
 
-      $("#create-account").on('submit', function(event) {
-        event.preventDefault();
-      });
-
 });
