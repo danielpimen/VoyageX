@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/images/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -28,7 +29,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
 </head>
 
-<body class="detailsBody">
+<body class="confirmBody">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="create_account.html">Create an Account</a>
                         <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="mytrip.html">My Trips</a>
+                        <a class="dropdown-item  active" href="mytrip.html">My Trips<span class="sr-only">(current)</span></a>
                     </div>
                 </li>
             </ul>
@@ -67,8 +68,8 @@
             </div>
         </div>
     </nav>
-    <h1 class="detailTxt">Confirm your Details</h1>
-     <div class="confirmTb">
+    <h1 class="confirmTitle2">Last Confirmation</h1>
+    <div class="confirmTb">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -103,98 +104,35 @@
                     <td>Hotel</td>
                     <td>SpaceX Hotel</td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-    <h1 class="detailTxt">Payment</h1>
-    <div class="payContainer">
-        <div class="wrapper">
-            <form id="wrapperText">
-                <div class="form-row">
-                    <div class="form-group col-md-6 my-4">
-                        <label for="exampleFormControlSelect1">Card Type</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option selected>Select</option>
-                            <option value="1">Visa</option>
-                            <option value="2">Master</option>
-                            <option value="2">Discover</option>
-                            <option value="2">Employee</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6 my-4">
-                        <label for="cardNumber"><b>Card number</b></label>
-                        <input type="text" class="form-control" id="cardNumber" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6 my-4">
-                        <label for="exampleFormControlSelect1">Expiration data</label>
-                        <select class="form-control" id="exData">
-                            <option selected>Month</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="2">3</option>
-                            <option value="2">4</option>
-                            <option value="1">5</option>
-                            <option value="2">6</option>
-                            <option value="2">7</option>
-                            <option value="2">8</option>
-                            <option value="1">9</option>
-                            <option value="2">10</option>
-                            <option value="2">11</option>
-                            <option value="2">12</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6 my-4">
-                        <label for="exampleFormControlSelect1">Expiration data</label>
-                        <select class="form-control" id="year">
-                            <option selected>Year</option>
-                            <option value="1">2018</option>
-                            <option value="2">2019</option>
-                            <option value="2">2020</option>
-                            <option value="2">2021</option>
-                            <option value="1">2022</option>
-                            <option value="2">2023</option>
-                            <option value="2">2024</option>
-                            <option value="2">2025</option>
-                            <option value="1">2026</option>
-                            <option value="2">2027</option>
-                        </select>
-                    </div>
-                </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6 my-4">
-                        <label for="cardName"><b>Card name</b></label>
-                        <input type="text" class="form-control" id="cardName" required>
-                    </div>
-
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="priceBox">
-        <table class="table" id="priceTable">
-            <thead>
-                <tr>
-                    <th scope="col">Subtotal</th>
-                    <th scope="col">$3,500</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Estimated tax</td>
-                    <td>$315</td>
+                <th scope="row">7</th>
+                <td>Card Type</td>
+                <td>Visa</td>
                 </tr>
                 <tr>
-                    <td><b>Order total</b></td>
-                    <td><b>$3,815</b></td>
+                    <th scope="row">8</th>
+                    <td>Card number</td>
+                    <td>2456 2345 5632 3678</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Expiration data</td>
+                    <td>10/2022</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Card name</td>
+                    <td>John McSwain</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Order total</td>
+                    <td>$3,815</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="form-row">
-        <a href="last_confirm.html" class="button" button type="submit" class="btn btn-primary" id="orderBtn">Submit Payment</a>
+        <a href="mytrip.html" class="button" button type="submit" class="btn btn-primary" id="confirmBtn">Confirm</a>
     </div>
 </body>
 

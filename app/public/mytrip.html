@@ -28,7 +28,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
 </head>
 
-<body class="detailsBody">
+<body class="mytripBody">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,55 +69,53 @@
     </nav>
     <h1 class="confirmTitle">Here is your whole trip!<span class="badge badge-secondary">New</span></h1>
 
-    <div class="card-group" id="details">
-        <div class="card">
-            <div class="panel panel-primary" id=detailBox>
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                <strong><i class="fa  fa-list-alt"></i> Book Details</strong>
-            </h3>
-                </div>
-                <div class="panel-body" id="detailTable">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="Departure">Destination</label>
-                            <input type="text" class="form-control" id="search-term" placeholder="Moon">
-                        </div>
-                        <div class="form-group">
-                            <label for="Departure">Departure</label>
-                            <input type="text" class="form-control" id="search-term" placeholder="NASA Stennis Space Center">
-                        </div>
-                        <div class="form-group">
-                            <label for="TripDate">Trip Date</label>
-                            <input type="text" class="form-control" id="search-term" placeholder="April 2 - April 14">
-                        </div>
-                        <div class="form-group">
-                            <label for="Passengers">Passengers</label>
-                            <input type="text" class="form-control" id="search-term" placeholder="1">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/W6Tjqa0.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Space Shuttle Discovery</h5>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">$1,500</small>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/HdpebXi.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">SpaceX Hotel</h5>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">$2,000</small>
-            </div>
-        </div>
-    </div>
+    <div class="confirmTb">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">1</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">John McSwain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Destination</td>
+                    <td>Moon</td>
+                </tr>                   
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Departure</td>
+                    <td>NASA Stennis Space Center</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Trip Date</td>
+                    <td>April 2 - April 14</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Passengers</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Shuttle</td>
+                    <td>Space Shuttle Discovery</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Hotel</td>
+                    <td>SpaceX Hotel</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Order total</td>
+                    <td>$3,815</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>
