@@ -10,7 +10,7 @@ console.log(userChoice);
     $.post('/user/trip', userChoice, function(data) {
          alert('Submitted');
     }).then(function() {
-        window.location = "../my_trips.html";
+        window.location = "../mytrip.html";
 
     });
 
