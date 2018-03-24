@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body class="itineraryBody">
+<body class="itineraryBody-mars">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,11 +58,16 @@
     </nav>
     <h1 class="pointTxt">MARS</h1>
     <div class="container">
+        <p class="fleet">Our Space Shuttle Fleet</p>
+        <p class="shuttle-desc">
+            From private suites and Shower Spas in First Class to flat-bed seats in Business Class to extra room and custom lighting in Economy Class and inflight Wi-Fi throughout the spacecrafts, the Voyage X Z380 is as close as it comes to flying in your own private jet. The Voyage X Z380 space shuttle fleet is designed to make you feel right at home while experiencing flying through space to your planet of choice.
+        </p>
+        <p class="fleet">Choose your fleet below:</p>
         <div class="card-group" id="shuttle">
             <div class="card">
-                <img class="card-img-top" src="../assets/images/newHorizons.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/challenger.jpeg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">New Horizons</h5>
+                    <h5 class="card-title">Space Shuttle Challenger</h5>
                     <h6 class='card-text' id='estimatedTime1'> 
                 </div>
                 <div class="card-footer">
@@ -70,7 +75,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../assets/images/shuttle.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/discovery.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Space Shuttle Discovery</h5>
                     <h6 class = 'card-text' id = 'estimatedTime2'> 
@@ -80,15 +85,23 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../assets/images/airplane.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../assets/images/endeavor.jpeg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Jet Airliner 'Economy Class'</h5>
+                    <h5 class="card-title">Space Shuttle Endeavor</h5>
                     <h6 class = 'card-text' id = 'estimatedTime3'> 
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">$1,800</small>
                 </div>
             </div>
+        </div>
+
+        <p class="fleet">Our Luxury Space Hotels</p>
+        <p class="shuttle-desc">
+            With each of our Luxury Space hotels having its own distinctive shape our hotels were designed to exude luxury in every way. Each hotel incorporates a stunning array of sumptuous materials, including over 31 different types of marble with unique space rocks, custom made carpets. Guests have access to four indoor swimming pools, the best space restaurants and bars. You’d be hard pressed to find a lackluster room that would not meet your space experience needs. Each of our spacious outward facing hotel rooms include king or double queen beds, modern and space like fully equipped bathrooms, glass window views or enclosed balconies, state of the art stereo with speakers piped throughout the room, moon suites for space exploration, each hotel has its own tour guide
+        </p>
+        <p class="fleet">Choose your hotel below:</p>
+
             <div class="card-group" id="hotel">
                 <div class="card">
                     <img class="card-img-top" src="https://i.imgur.com/HdpebXi.jpg" alt="Card image cap">
@@ -126,9 +139,9 @@
                                 <label for="exampleFormControlSelect1">Shuttle</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option selected>Pick Your Vehicle</option>
-                                    <option value="New Horizons">New Horizons</option>
+                                    <option value="New Horizons">Space Shuttle Challenger</option>
                                     <option value="Space Shuttle">Space Shuttle Discovery</option>
-                                    <option value="Jet Airliner">Jet Airliner</option>
+                                    <option value="Jet Airliner">Space Shuttle Endeavor</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-5">
