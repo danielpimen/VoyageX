@@ -60,9 +60,31 @@ body {
     z-index: 0;
 }
 
+header {
+    text-align: center;
+    color: #ffffff;
+}
+
+.space-rocket {
+    width: 10%;
+    height: 100%;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    width: 25%;
+}
+
 #bookBtn {
     padding: 15px 20px 15px 20px;
     border-radius: 10px;
+    background-color: #e53935;
+    border-color: #e53935;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 /*Itinerary Page*/
