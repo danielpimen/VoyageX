@@ -1,11 +1,9 @@
-body {
-    background-image: url("https://i.imgur.com/gxlk9TW.jpg");
-    background-size: 1440px;
-    margin: 0;
-}
-
-
 /*HOME page*/
+
+body {
+    background-color: black;
+    padding-top: 70px;
+}
 
 #homeLogo {
     font-family: 'Fredoka One', cursive;
@@ -14,53 +12,95 @@ body {
     text-align: center;
     position: absolute;
     margin: 10% 5% 15% 12%;
+    position: absolute;
 }
- 
 
- .createBtn {
+#logoSub1 {
+    font-family: 'Amatic SC', cursive;
+    color: #ffffff;
+    position: absolute;
+    font-size: 35px;
+    margin: 8% 5% 15% 6%;
+    font-weight: bold;
+}
+
+#logoSub2 {
+    font-family: 'Amatic SC', cursive;
+    color: #ffffff;
+    position: absolute;
+    font-size: 35px;
+    margin: 19% 5% 15% 27%;
+    font-weight: bold;
+}
+
+.createBtn {
     padding: 0 0 0 0;
-    margin: 37% 5% 15% 22%;
-    border: 1px solid #ffffff;
-    width: 1%;
+    margin: 500px 0 0 300px;
+    width: 161px;
     height: 7%;
     border-radius: 10px;
-    background-color: #ffffff;
     opacity: 0.7;
-    z-index: -2;
+    z-index: 5;
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 
 /*About page*/
 
 .aboutText {
+    margin-top: 35%;
     margin-left: 50px;
     margin-right: 50px;
-    color: #d2d1cd;
+    color: #ffffff;
     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;   
 }
 
 .card {
     margin: 15% 5% 5% 5%;
 }
 
-.cardTitle {
-    text-align: right;
-    margin-top: 20px;
-    font-size: 30px;
-}
+
 
 .cardText {
     text-align: right;
-    margin-top: 210px;
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
 }
 
 .cardText2 {
     text-align: right;
     margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
 }
 
 #section1 {
-    background-image: url("https://i.imgur.com/kjIo6bW.jpg");
-    background-size: 1440px;
-    margin: 0;
+    background-image: url(https://i.imgur.com/QR3dF9d.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 800px;
 }

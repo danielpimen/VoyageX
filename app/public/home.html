@@ -9,8 +9,8 @@
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/homestyle.css">
-    <link rel="stylesheet" href="assets/images/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -32,10 +32,19 @@
 body {
     position: relative;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat');
 </style>
 
 <body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/Galaxy.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
 
         <div class="container-fluid">
             <a class="navbar-brand mr-5" href="" style="font-family: 'Fredoka One', cursive;">VoyageX</a>
@@ -46,83 +55,60 @@ body {
                 <div id="myNavbar" class="scroll-area" data-spy="scroll" data-target=".navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active mr-5" href="home.html">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link mr-5" href="#section1"><span class=" glyphicon glyphicon-plane"></span> About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mr-5" href="itinerary.html">Itinerary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mr-5" href="book.html">Book</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mr-5" href="#section1">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="create_account.html">Create an Account</a>
-                                <a class="dropdown-item" href="#">My Account</a>
-                                <a class="dropdown-item" href="#">My Trips</a>
-                            </div>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <ul class="nav navbar-nav mr-5">
+                        <li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav>
+        </div>
     </nav>
     <div>
-        <p id="homeLogo">VoyageX</p>
-    </div>
-    <div class="createBtn">
-        <a href="create_account.html" class="btn btn-secondary btn-lg" role="button" aria-disabled="true">Create Account</a>
+        <p id="logoSub1">BLAST OFF ON A CELESTIAL VOYAGE</p>
+        <p id="homeLogo">VOYAGE X</p>
+        <p id="logoSub2">AN INTERSTELLAR TRAVEL AGENCY</p>
     </div>
     <div id="section1" class="container-fluid" style="padding-top: 0.018px; padding-bottom: 5%">
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="https://i.imgur.com/7Wer4iv.jpg" alt="Card image">
-            <div class="card-img-overlay">
-                <h5 class="cardTitle">Nine Planets</h5>
-                <p class="cardText">We shall not cease from exploration, and the end of all our exploring will be to.</p>
-                <p class="cardText2">T. S. Eliot</p>
-            </div>
-        </div>
-        <div class=textBox>
-            <p class=aboutText>App to search and book voyages to space. User will be able to book a voyage by selecting destination, date and passengers. User must create a profile and have the ability to update and delete profile. User will have the ability to see the profiles of other passengers (because these will be people they will be spending a lot of time with). User will be able to also view the "itinerary" of each voyage and save favorites.</p>
-        </div>
-        <script>
-        $(document).ready(function() {
-            // Add scrollspy to <body>
-            $('body').scrollspy({ target: ".navbar", offset: 50 });
+        <p class="cardText">We shall not cease from exploration, and the end of all our exploring will be to.</p>
+        <p class="cardText2">T. S. Eliot</p>
+        <p class="aboutText">Voyage X’s vision is to open space frontier to private citizens. We want as many people as possible to experience what it is like to live in space, to circle the Earth, or travel beyond Earth orbit. Come experience Space choose trips from Mars to a spacewalk on the moon or even see Pluto. Join the greatest private expedition of our time and Become one of the first people to leave low-Earth orbit in over 40 years.</p>
+    </div>
+    <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
 
-            // Add smooth scrolling on all links inside the navbar
-            $("#myNavbar a").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+    $(document).ready(function() {
+        // Add scrollspy to <body>
+        $('body').scrollspy({ target: ".navbar", offset: 50 });
 
-                    // Store hash
-                    var hash = this.hash;
+        // Add smooth scrolling on all links inside the navbar
+        $("#myNavbar a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
+                // Store hash
+                var hash = this.hash;
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
         });
-        </script>
+    });
+    </script>
 </body>
 
 </html>
