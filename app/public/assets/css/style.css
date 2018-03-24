@@ -15,13 +15,19 @@ body {
 }
 
 .card {
-    margin: 5% 5% 5% 5%;
+    margin: 5%;
+    padding: 2px;
 }
 
-.cardTitle {
-	text-align: right;
-	margin-top: 20px;
-	font-size: 30px;
+.card:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.card-title {
+	text-align: center;
 }
 
 .cardText {
@@ -48,8 +54,7 @@ body {
     margin: 5% 5% 5% 5%;
     border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #707070;
-    opacity: 0.5;
+    background-color: #2d007ede;
     z-index: -2;
 }
 
@@ -94,12 +99,12 @@ hr {
     background-size: 1440px;
     height: 100vh;  
 }
-
 .pointTxt {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 70px;
     margin: 10% 0 15% 30%;
+    text-shadow: 0px 0px 25px white;
 }
 
 .container {
@@ -113,10 +118,9 @@ hr {
     padding: 2% 1% 1% 2%;
     margin:  5% 5% 5% 10%;
     border: 1px solid #ffffff;
-    width: 1440px;
     height: 7%;
     border-radius: 10px;
-
+    background-color: #2d007ede; 
 }
 
 #wrapperText1 {
@@ -124,10 +128,32 @@ hr {
     font-weight: bold;
 }
 
+.shuttle-desc {
+    color: white;
+    text-align: center;
+    padding: 0 15%;
+    margin: 0;
+}
+
+.fleet {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.card-footer {
+    text-align: right;
+    font-weight: bold;
+}
+
 #selectBtn {
-     margin: 20px 0 0 30px;
-     color: black;
-     font-weight: bold;
+    margin: 20px 0 0 30px;
+    font-weight: bold;
+    background-color: #e53935;
+    border-color: #e53935;
+    color: white;
 }
 
 /*create account page*/
@@ -251,4 +277,3 @@ hr {
     font-size: 40px;
     margin: 5% 0 0 18%;   
 }
-
